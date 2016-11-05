@@ -1,3 +1,4 @@
+# filer som inte ska laddas upp till GitHub
 # OS generated files #
 ######################
 .DS_Store
@@ -7,4 +8,5 @@
 
 # Package manager #
 ######################
+# node_modules är en STOR mapp så den vill vi inte ha med vid uppladdning till GitHub
 node_modules

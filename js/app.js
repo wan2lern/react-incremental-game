@@ -1,8 +1,9 @@
+// inkludera jQuery från node_modules
 var $ = require('jquery');
 
 /*** Game class ***/
 class Game {
-    // set initial values
+    // sätt initiala värden
     constructor() {
         this.totalClicks = 0;
         this.clickIncrement = 1;
@@ -71,8 +72,8 @@ $('#autoClickerBuy').click(function () {
 
 
 
-/*Upgrades*/
-/* Two Clicks Per Autoclicker */
+/* Upgraderingar */
+/* Två klick Per Autoklick */
 $('#upgradeTwoAutoClicks').click(function () {
     if (clickGame.totalClicks >= 200) {
         clickGame.buyAutoClicker(200, 2);
@@ -82,7 +83,7 @@ $('#upgradeTwoAutoClicks').click(function () {
     }
 });
 
-/* Five Clicks Per Autoclicker */
+/* Fem klick Per Autoklick */
 $('#upgradeFiveAutoClicks').click(function () {
     if (clickGame.totalClicks >= 500) {
         clickGame.buyAutoClicker(500, 5);
@@ -92,7 +93,7 @@ $('#upgradeFiveAutoClicks').click(function () {
 });
 
 
-/* Two Clicks Per Click*/
+/*  Två klick Per klick */
 $('#upgradeTwoClicks').click(function () {
     if (clickGame.totalClicks >= 20) {
         clickGame.buyExtraClicker(20, 2);
@@ -102,7 +103,7 @@ $('#upgradeTwoClicks').click(function () {
     }
 });
 
-/* Five Clicks Per Click*/
+/* Fem klick Per klick*/
 $('#upgradeFiveClicks').click(function () {
     if (clickGame.totalClicks >= 100) {
         clickGame.buyExtraClicker(100, 5);
@@ -112,7 +113,7 @@ $('#upgradeFiveClicks').click(function () {
     }
 });
 
-/* Ten Clicks Per Click */
+/* Tio klick Per klick */
 $('#upgradeTenClicks').click(function () {
     if (clickGame.totalClicks >= 500) {
         clickGame.buyExtraClicker(500, 10);
@@ -123,7 +124,7 @@ $('#upgradeTenClicks').click(function () {
 });
 
 
-/* 100 clicks per click */
+/* 100 klick Per klick */
 $('#superClicker').click(function () {
     if(clickGame.totalClicks > 50000) {
         clickGame.buyExtraClicker(50000, 100);
@@ -133,7 +134,7 @@ $('#superClicker').click(function () {
     }
 });
 
-/* 1000 clicks per click */
+/* 1000!!! klick Per klick */
 $('#uberClicker').click(function () {
     if(clickGame.totalClicks > 150000) {
         clickGame.buyExtraClicker(150000, 1000);
