@@ -1,0 +1,87 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.container {
+    width: 600px;
+    padding: 14px;
+    margin: 2em auto;
+    border: 1px solid #fff;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+    font: 300 2em/150% sans-serif;
+}
+p {
+    font: normal 1.2em/230% monospace;
+    position: relative;
+}
+p > span {
+    position: absolute;
+    right: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+.clicked:hover {
+    background-color: deeppink;
+    color: #fff;
+}
+button {
+    width: 100%;
+    height: 52px;
+    font: normal 1.5em/100% sans-serif;
+    background-color: deepskyblue;
+    color: #fff;
+    border: 1px solid #9a9a9a;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #333;
+    color: floralwhite;
+    border: 1px solid rgba(250, 250, 250, .5);
+    border-radius: 4px;
+}
+button:focus {
+    outline: none;
+}
+button:last-of-type {
+    margin-bottom: 0;
+}
+hr {
+    height: 2px;
+    background-color: #eee;
+    width: 100%;
+}
+hr:last-of-type {
+    margin-bottom: 2em;
+}
+hr:first-of-type {
+    margin-top: 2em;
+}
+.orangered {
+    background-color: orangered;
+    border: 1px solid rgba(200, 200, 200, .5);
+}
+.orange {
+    background-color: orange;
+}
+.pink {
+    background-color: deeppink;
+}
+.red {
+    background-color: red;
+}
+.hidden {
+    display: none;
+}

@@ -1,18 +1,33 @@
-<!doctype html>
-<html lang="se">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<title>IncreMENTAL Game</title>
+    <meta charset="utf-8">
+    <title>Incremental Game</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <section class="box">
-        <header>
-            <h1>IncreMENTAL Game</h1>
-        </header>
-    </section>
-    <section class="box" id="app">
-        <!-- -->
-    </section>
-<script src="./dist/app.min.js"></script>
+    <div class="container">
+        <h1>IncreMental!</h1>
+        <button id="click" type="button" class="clicker">( CLICK ME )</button>
+        <hr />
+        <p>Clicks: <span id="totalClicks">0</span></p>
+        <hr />
+        <p>Auto Clicks Per Second: <span id="autoClickers">0</span></p>
+        <hr />
+        <p>Clicks per click: <span id="clicksPerClick">1</span></p>
+        <hr />
+        <button id="autoClickerBuy" class="orange">BUY AN AUTOCLICKER (10p)</button>
+        <button id="upgradeTwoClicks" class="orangered">TWO CLICKS PER CLICK (50p)</button>
+        <button id="upgradeFiveClicks" class="orangered hidden">FIVE CLICKS PER CLICK (200p)</button>
+        <button id="upgradeTenClicks" class="orangered hidden">TEN CLICKS PER CLICK (1000p)</button>
+        <button id="upgradeTwoAutoClicks" class="pink">TWO CLICKS PER AUTOCLICKER (200p)</button>
+        <button id="upgradeFiveAutoClicks" class="pink hidden">FIVE CLICKS PER AUTOCLICKER (500p)</button>
+        <button id="superClicker" class="red hidden">SUPER CLICKER (50 000p)</button>
+        <button id="uberClicker" class="red hidden">üBER CLICKER (150 000p)</button>
+    </div>
+    <script type="text/javascript" src="./dist/app.min.js"></script>
 </body>
+
 </html>
